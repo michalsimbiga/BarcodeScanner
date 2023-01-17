@@ -12,11 +12,13 @@ androidxRoom = "2.4.3"
 androidxTest = "1.5.0"
 androidxTestExt = "1.1.4"
 androidxTestRunner = "1.5.1"
+camerax = "1.2.0"
 coroutines = "1.6.4"
 hilt = "2.44.2"
 junit = "4.13.2"
 kotlin = "1.7.20"
 ksp = "1.7.20-1.0.8"
+accompanist = "0.28.0"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
@@ -46,10 +48,20 @@ hilt-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", 
 junit = { module = "junit:junit", version.ref = "junit" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
 
+# Camera
+androidx-camerax-core = { module = "androidx.camera:camera-core", version.ref = "camerax" }
+androidx-camerax-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camerax" }
+androidx-camerax-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camerax" }
+androidx-camerax-view = { module = "androidx.camera:camera-view", version.ref = "camerax" }
+androidx-camerax-extensions = { module = "androidx.camera:camera-extensions", version.ref = "camerax" }
+
+#Accompanist
+google-accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-gradle = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
