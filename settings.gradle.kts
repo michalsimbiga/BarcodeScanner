@@ -12,5 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "BarcodeScanner"
-include ':app'
+
+include(":app")
